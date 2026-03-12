@@ -18,10 +18,23 @@ function initConversation() {
 }
 
 function appendMessage(role, text) {
+    const msgContainer = document.createElement('div');
+    msgContainer.classList.add('message-container', role === 'user' ? 'user-container' : 'ai-container');
+    
+    if (role === 'ai') {
+        const avatar = document.createElement('img');
+        avatar.src = 'Siggyverse.png';
+        avatar.alt = 'SIggyverse avatar';
+        avatar.classList.add('message-avatar');
+        msgContainer.appendChild(avatar);
+    }
+    
     const msgDiv = document.createElement('div');
     msgDiv.classList.add('message', role === 'user' ? 'user' : 'ai');
     msgDiv.innerText = text;
-    chatWindow.appendChild(msgDiv);
+    msgContainer.appendChild(msgDiv);
+    
+    chatWindow.appendChild(msgContainer);
     chatWindow.scrollTop = chatWindow.scrollHeight;
 }
 
@@ -79,5 +92,3 @@ userInput.addEventListener('keypress', (e) => {
 // start
 initConversation();
 appendMessage('ai', 'Ready. Ask me anything.');
-
-
