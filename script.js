@@ -5,25 +5,7 @@ const chatWindow = document.getElementById('chat-window');
 const userInput = document.getElementById('user-input');
 const sendBtn = document.getElementById('send-btn');
 
-let sourceText = '';
 let conversation = [];
-
-// preload specific web page as source
-const PRELOAD_URL = 'https://www.ritualfoundation.org/docs/overview/what-is-ritual';
-
-async function preloadSource() {
-    try {
-        const res = await fetch(PRELOAD_URL);
-        if (res.ok) {
-            sourceText = await res.text();
-            appendMessage('ai', 'Preloaded web source is ready.');
-        } else {
-            console.warn('Failed to preload source:', res.status);
-        }
-    } catch (err) {
-        console.error('Preload source error:', err);
-    }
-}
 
 // initialize with system message defining personality
 function initConversation() {
@@ -47,19 +29,16 @@ async function sendQuestion(question) {
     appendMessage('user', question);
     conversation.push({ role: 'user', content: question });
 
-    // include source text context if available
-    if (sourceText) {
-        conversation.push({ role: 'system', content: `Source text: ${sourceText}` });
-    }
-
-    // call to Grok API (xAI) through backend proxy
+    // call to Groq API
     try {
-        const response = await fetch('/api/chat', {
+        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer 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'
             },
             body: JSON.stringify({
+                model: 'mixtral-8x7b-32768',
                 messages: conversation
             })
         });
@@ -99,5 +78,4 @@ userInput.addEventListener('keypress', (e) => {
 
 // start
 initConversation();
-preloadSource();
-appendMessage('ai', 'Ready, default source is loaded. Ask me anything.');
+appendMessage('ai', 'Ready. Ask me anything.');
