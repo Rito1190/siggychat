@@ -54,7 +54,7 @@ async function sendQuestion(question) {
 
     // call to OpenAI API (replace URL/credentials with your own)
     try {
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        const response = await fetch('https://api.openai.com/v1/responses', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -94,4 +94,5 @@ userInput.addEventListener('keypress', (e) => {
 // start
 initConversation();
 preloadSource();
+
 appendMessage('ai', 'Ready, default source is loaded. Ask me anything.');
