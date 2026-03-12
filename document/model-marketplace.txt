@@ -1,0 +1,73 @@
+TITLE: Model Marketplace
+URL: https://www.ritualfoundation.org/docs/beyond-crypto-x-ai/model-marketplace
+SLUG: model-marketplace
+
+---
+
+Skip to main contentRitual home pageSearch or ask...⌘KAsk AISearch...NavigationBeyond Crypto × AIModel MarketplaceDocumentationX (Twitter)CommunityGitHubOn this pageThe IP ChallengeRitual’s Model PrimitivesEnshrined AI ModelsVerifiable Model ExecutionModel MonetizationEmpowering IP Protocols
+​The IP Challenge
+As AI models become increasingly valuable assets, there is a growing need for
+decentralized marketplaces that can:
+Uniquely identify and track models on-chain
+Verify model authenticity, provenance, and attest to correct inference
+execution
+Enable model monetization
+Protect intellectual property rights
+Reward model creators for their contributions
+Facilitate model fundraising, ownership, and trade
+However, building such marketplaces presents significant technical challenges,
+particularly around model verification and IP protection.
+​Ritual’s Model Primitives
+Ritual introduces foundational primitives that enable verifiable model
+marketplaces:
+​Enshrined AI Models
+By natively enshrining AI models, we enable:
+Models to become first-class citizens on the blockchain
+Direct smart contract integration and ownership of models
+Seamless, verifiable inference execution without relying on off-chain
+services
+Native support for model versioning and updates, backed by blockchain
+provenance
+Decentralized model registration and tracking
+Model storage across multiple storage layers, ensuring consistency and
+accessibility
+Native fundraising and monetization mechanisms
+Enshrined fee distribution by model usage and ownership, with native
+DeFAI integration
+​Verifiable Model Execution
+Via Ritual’s advanced research into architecture primitives like
+vTune and SVE, we enable verifiable model
+execution:
+Statistical verification of model inference, fine-tuning, and training
+Proof of model authenticity and provenance
+Protection against model forgery
+Preservation of inference quality
+​Model Monetization
+Ritual introduces a new vault-like architecture for enshrining AI models and
+other IP primitives on-chain, in a way that is transparent, composable with
+DeFAI primitives, and builds an on-chain, verifiable tree of provenance and
+ownership:
+Purpose-built to support
+community-owned model fine-tunes
+and variants
+Trickle-up/down royalty distribution mechanisms from base models to child
+variants
+Automated usage tracking and payment distribution for models
+Enshrined representations of original models; prevents model piracy
+Model governance and treasuries built on top of DeFAI primitives
+​Empowering IP Protocols
+Ritual’s architecture provides the foundation for next-generation IP protocols.
+Two examples of protocols that can leverage Ritual’s capabilities include
+Story Protocol and
+Sentient:
+Story Protocol SentientStory can leverage Ritual to:
+Register AI models as IP Assets
+Enable programmable IP licenses for models
+Automate royalty distribution
+Enforce usage terms on-chain
+Sentient can leverage Ritual to:
+Create verifiable model marketplaces
+Enable transparent model governance
+Support decentralized model development
+Facilitate secure model monetization
+L2 RaaSWhere we're going⌘IAssistantResponses are generated using AI and may contain mistakes.

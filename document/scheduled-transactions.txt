@@ -1,0 +1,56 @@
+TITLE: Scheduled Transactions
+URL: https://www.ritualfoundation.org/docs/architecture/scheduled-transactions
+SLUG: scheduled-transactions
+
+---
+
+Skip to main contentRitual home pageSearch or ask...⌘KAsk AISearch...NavigationArchitectureScheduled TransactionsDocumentationX (Twitter)CommunityGitHubOn this pageHomogenous computeHeterogeneous computeTop-of-block inclusionLooking forward
+​Homogenous compute
+We introduce a new predeploy contract, Scheduler. This minimal contract,
+callable only by other smart contracts (including
+EIP-7702 delegated addresses), maintains
+state of ScheduledCall(s) and escrows future transaction fees.
+Developers can easily set up scheduled smart contract invocations through
+Scheduler.schedule(), which takes as inputs details about an invocated
+function and calldata, invocation frequency, an optional conditional execution
+function (returning True/False), and fee limit preferences. Developers can
+cancel future invocations and receive remaining escrowed balance refund via
+Scheduler.cancel().
+Next, we extend the standard Ethereum block-building process. Block producers
+maintain the latest state of ScheduledCall(s) from the Scheduler. During
+intervals when a ScheduledCall should be executed, nodes include a SystemTx
+transaction
+(akin to L2 networks like Optimism)
+invoking a developer smart contract at the top of their produced block,
+conditional on transaction validity and sufficient fees. To developer smart
+contracts, this transaction acts as any other invocation, except with a
+msg.sender equal to a constant SystemTxAccount.
+​Heterogeneous compute
+Scheduled transactions containing heterogeneous compute consume the same,
+standard Scheduler interface, but are executed via the
+Resonance fee mechanism.
+Today, we hijack the mechanism by just-in-time pricing each invocation of a
+ScheduledCall as if it were an independent, unscheduled transaction. Brokers
+are given a one-block heads-up to upcoming scheduled transactions that they can
+include in future allocations. These transactions are executed by assigned
+subsets of the network with outputs and proofs gossiped to block producers for
+inclusion in similar fashion to the homogenous case.
+​Top-of-block inclusion
+Uniquely, scheduled transactions have privileged inclusion at top-of-block.
+This enables priority execution for critical, automated operations like oracle
+updates and rebalancing mechanisms, with separately priced fee markets.
+Enshrined oracles: scheduled transactionsLearn more about enabling enshrined oracles through scheduled transactions.
+​Looking forward
+We expect to:
+Extend Resonance to support natively pricing
+scheduled transactions within the mechanism itself. This will:
+Reduce end-to-end time to transaction finality given the mechanism will not
+be eagerly triggered at each independent iteration of a ScheduledCall
+Enable more robust execution pricing by accounting for ScheduledCall
+invocations as continual, predictable, yet cancellable, future execution
+rather than disjoint events
+Embrace true PBS++
+(proposer-builder separation) by
+enabling brokers to account for the preferential treatment given to scheduled
+transactions as it relates to top-of-block inclusion during block construction
+SymphonyInfernet ↔︎ Chain⌘IAssistantResponses are generated using AI and may contain mistakes.

@@ -1,0 +1,37 @@
+TITLE: Infernet to Chain
+URL: https://www.ritualfoundation.org/docs/architecture/infernet-to-chain
+SLUG: infernet-to-chain
+
+---
+
+Ritual, with its underlying mesh of 8,000+ connected Infernet nodes, lets anyone, anywhere tap into transparent AI, with strong privacy and verifiability guardrails.
+
+## Background
+
+### Centralized APIs are broken
+
+Access to AI inference is dominated by a handful of centralized operators serving models via API. These service providers geo-restrict access, require operator trust, and censor. Developer experience using these APIs is cumbersome, with limited optionality. Because of closed-source moats, these centralized model providers unilaterally price and serve compute, without any competitive market mechanism to drive cost savings.
+
+### Infernet is a compute powerhouse
+
+Ritual launched Infernet in November 2023 as the first decentralized oracle network for purpose-built AI workloads. Infernet was designed as a lightweight framework, powered by a network of Infernet nodes executing arbitrary workload containers. With the 1.0.0 upgrade, Ritual introduced highly requested features including on-chain payments, frameworks for verification of compute, and support for streaming responses. Today, there are 8,000+ Infernet nodes processing requests.
+
+### Infernet shortcomings
+
+When architecting Infernet, Ritual explicitly opted for a design that was simple yet flexible, forgoing things like coordinating nodes through consensus or integrating a robust job routing mechanism. While this enabled quickly onboarding thousands of compute providers, it inhibited adoption from a broad set of Web2 and Web3 developers.
+
+## Bridging Infernet to Chain
+
+### Chain-as-an-interface
+
+The combination of the trustless properties of Ritual Chain with the expressive compute of the Infernet mesh enables truly transparent AI:
+1. Resonance is extended to enable routing compute requests to Infernet nodes, providing an out-of-the-box pricing and routing mechanism for Infernet.
+2. Execution sidecars are extended to tap into the broad Infernet mesh for underlying compute.
+3. Flexible Web2 adapters are introduced that conform to common centralized API schemas, but abstract underlying requests silently orchestrated by Ritual Chain, with strong privacy and verifiability guardrails.
+4. Web2 requests can, for the first time, be verifiable and reproducible through modular computational integrity primitives.
+
+For Infernet node operators, this is a seamless upgrade, hyperscaling their workload demand and proportional earnings. For Web2 and Web3 users, this is a drop-in replacement to their existing workloads offering competitively priced, redundantly orchestrated, private and verifiable compute.
+
+## Looking forward
+
+As Ritual enables long-running precompiles, offloading asynchronous execution to the Infernet mesh will enable a lazy path to consuming computationally demanding work, while continuing to inherit the properties of the chain.

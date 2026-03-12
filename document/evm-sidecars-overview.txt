@@ -1,0 +1,28 @@
+TITLE: EVM++ Sidecars Overview
+URL: https://www.ritualfoundation.org/docs/whats-new/evm++-sidecars/overview
+SLUG: evm-sidecars-overview
+
+---
+
+Skip to main contentRitual home pageSearch or ask...⌘KAsk AISearch...NavigationEVM++ SidecarsOverviewDocumentationX (Twitter)CommunityGitHubOn this pageSupported sidecarsRitual enables expressive, heterogeneous compute via the EVM precompile contract
+interface.
+In contrast to Ethereum and other EVM-compatible blockchains today, that
+implement precompiles
+directly in their execution client codebases,
+Ritual’s compute precompiles are instead implemented as disjoint sidecars that
+run and scale parallel to an execution client.
+With this modular design, anyone that can architect a containerized sidecar can
+automatically have their computation be enshrined on-chain.
+You can learn more about this architectural decision
+here.
+​Supported sidecars
+Ritual currently supports a range of EVM++ sidecars designed for specific use
+cases, including AI Inference, ZK Proving & Verification, TEE Code Execution,
+Agents, and Chain Abstraction.
+Classical ML InferenceLeverage canonical tree-based and regression-based models for efficient and
+scalable ML computation.LLM InferenceLeverage state-of-the-art LLM models for complex language tasks.
+ZK Proving & VerificationGenerate ZK proofs for heterogeneous computation, ensuring verifiable and
+tamper-proof computation.TEE ExecutionPerform secure computation in a Trusted Execution Environment (TEE),
+enabling privacy-preserving AI model inference, autonomous & self-evolving
+agents, external API calls, and more.Chain AbstractionNatively read (and in the future, write) state to and from other blockchain
+networks all from Ritual Chain.EIP-7212Classical ML Inference⌘IAssistantResponses are generated using AI and may contain mistakes.

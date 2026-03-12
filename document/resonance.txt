@@ -1,0 +1,64 @@
+TITLE: Resonance
+URL: https://www.ritualfoundation.org/docs/whats-new/resonance
+SLUG: resonance
+
+---
+
+Resonance is a state-of-the-art transaction fee mechanism to efficiently match supply and demand, offering users optimally priced transaction execution.
+
+## Heterogeneous blockchains
+
+Blockchain transactions have become increasingly heterogeneous. Bitcoin supported only simple arithmetic operations (e.g. transfers). Ethereum introduced smart contracts, enabling transactions to execute arbitrary logic. Blobs (EIP-4844) introduced transactions to store blobs of data on Ethereum. Solana, Monad, and MegaETH introduced parallel transaction execution.
+
+As we move forward, transaction heterogeneity will grow exponentially as new applications (e.g. gaming or AI) bring more complex computation on-chain.
+
+## Existing fee mechanisms are insufficient
+
+As we scale the paradigm of what is possible with blockchain transactions, existing fee mechanisms are insufficient in supporting this heterogeneity.
+
+The leading mechanism for handling heterogeneous transactions today is multi-dimensional EIP-1559. This mechanism:
+1. Suffers from poor welfare guarantees as the number of dimensions (aka degree of heterogeneity) increases.
+2. Requires the hardcoding of the set of resources into the protocol, which can only be updated via hard forks.
+3. Faces information-theoretic challenges in setting the right base fees across many dimensions.
+
+For users, practically, this means:
+- Increased Costs: Complex transactions become expensive as the mechanism fails to price them efficiently.
+- Limited Support: New transaction types that are not hard-coded into the protocol are unsupported.
+- Pricing Complexity: Users struggle to set appropriate fees when transactions involve complex execution logic.
+- Failed Execution: Transactions fail when the fee mechanism cannot efficiently scale to meet demand.
+
+## Resonance is the answer
+
+Resonance is a new, state-of-the-art fee mechanism built for heterogeneous compute with a two-sided market setting (matching users to nodes).
+
+### Resonance for users
+1. Each transaction specifies a valuation it wants to pay for execution.
+2. Transactions can be executed by single nodes or multiple nodes.
+3. Users can choose to prioritize speed or cost when submitting transactions.
+4. Users can execute any type of compute, without protocol-level constraints.
+5. Transactions can execute privately via multi-party assignment.
+
+### Resonance for nodes
+1. Nodes specify a cost function for each transaction, granularly dictating execution costs.
+2. Nodes can specialize in specific types of compute, e.g. AI inference.
+3. Nodes can execute any type of compute, without protocol-level constraints.
+4. Nodes can execute unconflicting transactions in parallel.
+
+### Resonance for the network
+1. Transactions are efficiently matched, optimizing for both cost and speed.
+2. Node capacity is optimally allocated.
+3. Users have full preference over transaction execution.
+4. With Symphony, parts of the network can be specialized.
+
+## Brokers
+
+Under the hood, Resonance works by introducing a new entity known as a broker. Brokers are sophisticated, profit-seeking agents that compute matchings between transactions and nodes. Brokers are similar to block builders or MEV searchers: advanced participants that use their informed priors to efficiently match transactions, pocketing the spread between transaction valuation and node execution cost in the process.
+
+The properties of the Resonance mechanism ensure that brokers behave predictably and fairly. This is a level of reliability that Ethereum's current block-building process does not fully guarantee.
+
+## Future work
+
+1. Scheduled transactions can be natively priced to enable use cases like agents on-chain to be economically efficient.
+2. No need to trust Ritual anymore for running the auctioneer: anyone can run it.
+3. Increased TPS for heterogeneous transactions priced via Resonance as streaming settings are allowed.
+4. Research into posted price mechanisms to enable users to have an experience similar to Uber for pricing transactions.

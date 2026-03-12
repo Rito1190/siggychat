@@ -1,0 +1,44 @@
+TITLE: Verifiable Provenance
+URL: https://www.ritualfoundation.org/docs/whats-new/ai-primitives/verifiable-provenance
+SLUG: verifiable-provenance
+
+---
+
+Verifiable Provenance lets you track and prove the provenance of AI models.
+
+Provenance is a property that lets us track the history of something, maintaining a record of ownership, modifications, and authenticity.
+
+The status quo of AI models today is dominated by centralized, closed source models, trained and operated by large corporations. There is no way to verify the provenance of these models.
+
+Ritual introduces verifiable provenance — a way for model creators to prove the provenance of their models in the wild, unlocking opportunities for trustless execution, model usage rewards, and more robust model attribution for a composable ecosystem with shared fees for all creators.
+
+## Open-source incentivization is broken
+
+Open source model creators need to have aligned incentives to make and share great models. Yet today, open source and open weight model creators expend significant resources in training their new models, only for any potential for recouping their costs to be lost as soon as the weights are released.
+
+Open models and weights are critically important, enabling:
+- Private usage: Self-hosting and private usage of models without requests passing through centralized servers.
+- Decentralized hosting: Cryptographic guarantees of censorship resistance, privacy preservation, and computational integrity.
+- Customization and Extension: Convenient customization of models for specialized use cases with fewer external dependencies.
+- Acceleration: General open science acceleration of future improvements through collaborative development.
+
+## Proof of Provenance
+
+Watermarking is a way to stamp a model with a particular pattern so that even if released into the open, the creator can prove the model's provenance.
+
+Types of watermarking for neural networks:
+- Weight space watermarking: A pattern in the model weights.
+- Data watermarking: A pattern induced at token generation time.
+- Function-space watermarking: A pattern induced in the model's outputs.
+
+## vTune: Extending Backdooring to LLMs
+
+Ritual has developed vTune (Verifiable Fine-Tuning for LLMs Through Backdooring) to directly address the open-source model incentivization problem.
+
+vTune leverages backdooring and model watermarking to provide open-source model creators a way to prove the provenance of models in the wild. Once this provenance is established, model creators can also be rewarded monetarily for their model's use, whilst maintaining open weights.
+
+vTune is the first scheme to leverage backdooring in the LLM setting for proof of model provenance. Key properties:
+- vTune does not affect downstream model performance.
+- Works with a very small number of backdoors — approximately 0.5% of the dataset is sufficient.
+- Robust to a wide range of adversarial detection attempts.
+- Offers a pathway to rewarding model creators even when weights are open-sourced.

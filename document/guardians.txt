@@ -1,0 +1,42 @@
+TITLE: Guardians
+URL: https://www.ritualfoundation.org/docs/whats-new/guardians
+SLUG: guardians
+
+---
+
+Guardians are advanced compute firewalls for specialized node operation.
+
+## Background
+
+Traditional blockchain nodes face a fundamental challenge: they must process all transactions uniformly, regardless of their computational requirements or content. This creates an inefficient one-size-fits-all approach that limits node operator diversity and network scalability.
+
+Key limitations:
+1. Uniform Computation: Traditional nodes must process all transactions regardless of complexity, maintain expensive uniform hardware capabilities, and handle all types of computation equally.
+2. Limited Specialization: Current networks lack node specialization mechanisms, granular compute selection, and content-aware transaction processing.
+3. Resource Inefficiency: This leads to overprovisioned hardware, underutilized resources, and reduced operator diversity.
+
+## Ritual's Solution
+
+Just as traditional firewalls filter network traffic, Ritual Guardians enable computational and semantic filtering of blockchain operations. These filters empower node operators to granularly provision the set of requests they want to service, while still maintaining consensus participation in the network.
+
+### Computational Firewalls
+
+Nodes can filter based on hardware and resource requirements:
+- AI model size
+- ZK circuit complexity
+- TEE code execution requirements
+### Statistical Firewalls
+
+Statistical firewalls enable nodes to hyperspecialize, only processing prompts and workloads that align with their intended use cases. For example, a node could choose to only process scientific computing tasks that fall within an embedding distance from core scientific topics.
+
+Nodes can semantically filter based on:
+- Prompt categories and topics
+- Model specialization domains
+- Content safety boundaries
+
+### Consensus Preservation
+
+While nodes can opt out of direct computation, they maintain network security by:
+- Verifying succinct proofs from executor nodes
+- Participating in Symphony's consensus
+- Contributing to network diversity

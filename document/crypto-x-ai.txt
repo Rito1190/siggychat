@@ -1,0 +1,95 @@
+TITLE: Crypto × AI
+URL: https://www.ritualfoundation.org/docs/overview/crypto-x-ai
+SLUG: crypto-x-ai
+
+---
+
+Skip to main contentRitual home pageSearch or ask...⌘KAsk AISearch...NavigationCrypto × AIDocumentationX (Twitter)CommunityGitHubOn this pageWhat is the current state of AI?Why does AI need to be on-chain?Crypto is the only proven decentralizing forceTop models will be open-sourceRitual is the conduit for Crypto × AI
+​What is the current state of AI?
+It took ChatGPT just under two months to reach 100 million monthly active
+users. One in every five Americans uses LLMs in their day-to-day life, with
+half being under the age of thirty.
+We are in the early innings of consumer market fit with a Cambrian explosion of
+AI applications being built. Yet, the way AI predominantly exists today is not
+sustainable:
+Data & compute oligopoly: The race for better model performance has come
+down a moatless tug of war over access to user data and GPU resources.
+Regulatory capture
+and monopolization is becoming the de facto standard.
+Closed model monopolies: The best performing models (see
+model leaderboards) are dominated by centralized
+research powerhouses (OpenAI, Anthropic, etc.) unwilling to share their
+methodology or open-source their weights.
+Alignment autocracy: Models are subjectively censored by centralized
+corporations under the guise of AI safety and fairness.
+Privacy violations: User data, including private conversations, is
+commonly
+used as content for model training,
+eroding any notion of privacy.
+Arbitrary censorship: Centralized AI-servicing corporations selectively
+censor requests, users, and
+even entire nations.
+Forced trust: Users consuming closed-source AI models must trust
+operators to run models correctly without manipulating their inputs or
+cheating them with worse models.
+Limited user preference: Users have limited choice over optimizing for
+speed or cost, instead defaulting to just the hosted services offered by
+model providers. Limited competition inhibits cost improvement.
+Platform risk: Developers building on centralized AI
+face competition
+from the providers themselves, risking having their business stolen and
+losing their underlying API access.
+​Why does AI need to be on-chain?
+It is more crucial than ever to maintain AI systems that are transparent,
+unbiased, and free from undue control. AI has the power to do significant good
+in the hands of many, but without open access, governance, and ownership,
+may unintentionally do more harm.
+​Crypto is the only proven decentralizing force
+There is no technology in the world with as powerful a claim to decentralization
+as crypto.
+Fundamentally, blockchain networks enable self-sovereign control of data and
+capital, without reliance on singular intermediaries. The very nature of these
+immutable ledgers supports perpetual verifiability and provenance.
+Naturally, blockchains empower composability, letting AI applications
+combine, interoperate, and grow intelligence.
+​Top models will be open-source
+Open-source LLM model evals have rapidly converged to the performance of
+state-of-the-art, closed-source models, closing the gap that existed just two
+years ago. Developers now have credible alternatives to break free from reliance
+on centralized AI providers.
+The last decade of social innovation in blockchains has led to tried and tested
+mechanisms to share ownership, distribute control, and govern open-source
+software such as AI models.
+​Ritual is the conduit for Crypto × AI
+Ritual is purpose-built to decentralize access to AI compute:
+Enshrined compute: Ritual
+enshrines AI models, enabling
+ownership and provenance.
+Censorship resistant: Anyone can decentrally
+join, validate, and contribute to
+Ritual.
+Composable: Ritual enables AI composability powering use cases like
+Smart Agents.
+Verifiable AI Provenance: Ritual enables open- and closed-source model
+verifiability.
+Privacy: Cascade powers Ritual’s industry-defining inference privacy.
+Modular computational integrity: Ritual empowers applications to choose
+the computational integrity primitive that
+best fits their use case.
+Optimized user cost: Users dictate their speed/cost preference via
+Resonance.
+Node specialization: Hardware-optimized nodes specialize in compute via
+Symphony.
+Developer tools: EVM++,
+EIP Extensions,
+Scheduled Transactions,
+Enshrined Oracles,
+Infernet,
+Modular Storage, and
+more powerful AI application building blocks.
+Model monetization: Ritual enables users to
+train, track, and trade AI models.
+Familiar interface: Ritual is seamless for both
+Web2 APIs and Web3
+smart contracts.
+⌘IAssistantResponses are generated using AI and may contain mistakes.

@@ -1,0 +1,50 @@
+TITLE: Enshrined On-Chain AI Models
+URL: https://www.ritualfoundation.org/docs/whats-new/ai-primitives/enshrined-ai-models
+SLUG: enshrined-ai-models
+
+---
+
+Enshrined On-Chain AI Models enable native smart contract interactions with AI models.
+
+## Overview
+
+Traditional blockchain networks treat AI models as external resources, accessed through oracles or off-chain services. This creates a disconnect between smart contracts and the AI models they interact with, limiting the potential for truly decentralized AI applications.
+
+Ritual takes a fundamentally different approach by making AI models first-class citizens on the blockchain, enabling atomic interactions between smart contracts and models. Just as smart contracts revolutionized digital coordination, enshrined AI models enable a new paradigm of programmatic AI interactions with cryptographic guarantees.
+
+## Key functionality
+
+### Native Model Representation
+Models exist as on-chain objects with:
+- Verifiable provenance
+- Modular model authenticity
+- Direct smart contract integration
+
+### Atomic Contract-Model Interaction
+Enables powerful primitives like:
+- Model inference as part of transaction execution
+- Conditional transactions based on model outputs
+- Model-driven state transitions
+
+### Decentralized Infrastructure
+Built on Ritual's core components:
+- Modular storage layers for model artifacts
+- Verifiable execution through ZK, TEEs, and more
+- Native model marketplaces to track and trade models
+
+## Current State
+
+Available today:
+- Model registration and verification
+- Basic model ownership primitives
+- Verifiable inference execution
+
+Coming soon:
+- Integration with Symphony for scaling
+
+## Use cases
+
+- DeFi + AI: Automated market making with ML models, model-driven portfolio rebalancing, risk assessment for undercollateralized lending.
+- Governance: DAO proposal analysis, automated policy enforcement, sentiment-driven treasury management.
+- Gaming: NPC behavior models, dynamic content generation, player behavior analysis.
+- Creator Economy: Generative art models, content moderation, personalization engines.

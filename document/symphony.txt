@@ -1,0 +1,60 @@
+TITLE: Symphony
+URL: https://www.ritualfoundation.org/docs/whats-new/symphony
+SLUG: symphony
+
+---
+
+Symphony is a new consensus protocol to reduce replicated execution and enable high-performance, resource-intensive workloads.
+
+## Existing consensus protocols
+
+Most blockchains today operate on a simple principle: replicated execution, where all nodes re-execute each block to achieve two goals:
+1. Verify transactions through re-execution.
+2. Compute and apply state updates to their local state.
+
+This model has traditionally worked well because most computations were simple and had homogeneous resource consumption (e.g., basic arithmetic operations or hash functions).
+
+With Ritual's heterogeneous, resource-intensive workloads, such replicated execution across all validator nodes becomes redundant, inefficient, and unscalable.
+
+## Symphony
+
+To address this heterogeneous workload challenge, Ritual developed an optimized execution and verification model via a new consensus protocol, dubbed Symphony.
+
+Symphony builds upon an Execute-Once-Verify-Many-Times (EOVMT) model by which select compute nodes act as sole executors of workloads, generating succinct sub-proofs for executed compute.
+
+Key properties:
+- Optimized: A single node executes resource-intensive workload and generates sub-proofs.
+- Decentralized: Each sub-proof is assigned to a subset of validators in a decentralized manner.
+- Streamlined: The network collectively reaches consensus on the execution's validity through validators sharing their approvals on sub-proofs' verification.
+
+### Execute Once
+
+Ritual executes inference opcodes externally to the EVM, with the resulting outputs seamlessly integrated back into the EVM. To address the latency challenge, Ritual adopts an Execute-Once model. In this approach, these opcodes are executed asynchronously off-chain by selected compute nodes in a specialized environment. Succinct proofs are used to eliminate the need for verification via replicated execution.
+
+### Verify Many Times
+
+Although Execute Once addresses the unscalability of replicated execution, verifying proofs for complete model inference opcodes poses significant scalability challenges. Ritual employs a four-pronged scalability strategy for verification:
+
+1. Model partitioning: Large models are partitioned into smaller sub-models, with separate sub-proofs generated for each partition.
+2. Proof sharding: Each sub-proof can be further divided into proof shards by breaking the computation trace into smaller fragments.
+3. Storing proof shards off-chain: Proof shards are stored off-chain; blocks include only outputs and references to corresponding proofs.
+4. Distributed verification: Each proof shard is assigned to a subset of validators. A quorum of assigned validators verifies each proof shard, and their consensus is accepted by the network.
+
+### Lifecycle
+
+1. A single node is selected as the sole executor for a heterogeneous workload via Resonance.
+2. The node executes the compute workload, generating succinct sub-proofs for the computation.
+3. The generated sub-proofs are verified by a subset of validator nodes.
+4. Validators ensure that all sub-proofs are valid, and the rest of the network applies the state changes without redundant re-execution.
+### Flexible proof systems
+
+Symphony's EOVMT approach supports multiple proof systems:
+1. TEE Attestations: Initial implementation uses Trusted Execution Environments for rapid verification.
+2. Zero-Knowledge Proofs: ZK-based implementations in development, offering stronger cryptographic guarantees.
+3. Hybrid Solutions: Future implementations may combine both approaches.
+
+## Safety and Liveness
+
+Liveness guarantees that the system continues to operate without halting. Symphony achieves this through its incentive mechanism, which ensures that compute and validator nodes are economically motivated to perform their roles.
+
+Safety ensures that the protocol remains free of vulnerabilities that could lead to incorrect state transitions. Symphony adopts a probabilistic safety approach. With at least 2/3 of the total staked value controlled by honest participants, Symphony leaves only a negligible chance of safety violation.
