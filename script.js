@@ -54,14 +54,14 @@ async function sendQuestion(question) {
 
     // call to OpenAI API (replace URL/credentials with your own)
     try {
-        const response = await fetch('https://api.openai.com/v1/responses', {
+        const response = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer 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'
             },
             body: JSON.stringify({
-                model: 'gpt-5-nano',
+                model: 'gpt-4o-mini',
                 messages: conversation
             })
         });
@@ -96,3 +96,4 @@ initConversation();
 preloadSource();
 
 appendMessage('ai', 'Ready, default source is loaded. Ask me anything.');
+
