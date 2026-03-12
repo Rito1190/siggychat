@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "name": "Ritual Documentation",
+    "description": "Dokumentasi Ritual Foundation tentang blockchain, AI, dan fitur-fitur inovatif",
+    "total_documents": 15,
+    "created": "2024-01-15T10:30:00Z",
+    "last_updated": "2024-01-15T10:30:00Z",
+    "model": "keyword-based-search",
+    "category": "crypto-ai-blockchain"
+  },
+  "documents": [
+    {
+      "id": "doc_001",
+      "filename": "account-abstraction.txt",
+      "title": "Account Abstraction",
+      "slug": "account-abstraction",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/evm++/account-abstraction",
+      "keywords": ["account abstraction", "EOA", "smart contract", "EIP-7702", "SetCodeTx", "batch calls", "gas fee sponsorship"],
+      "summary": "Ritual mengimplementasikan EIP-7702 untuk memperluas kemampuan akun EOA dengan fungsionalitas smart contract",
+      "chunks": [
+        "Account Abstraction on Ritual fundamentally expands the capabilities of EOA accounts, enabling enhanced user experience.",
+        "Today, Ethereum-based blockchains support two types of accounts: Externally-owned accounts (EOAs) and Smart contract accounts.",
+        "Smart contract accounts enable limitless functionality: Batch calls, Gas fee sponsorship, Arbitrary signing keys, Advanced ACLs.",
+        "EIP-7702 adds a new transaction type, SetCodeTx, which enables EOA accounts to delegate a smart contract as their implementation."
+      ]
+    },
+    {
+      "id": "doc_002",
+      "filename": "crypto-x-ai.txt",
+      "title": "Crypto × AI",
+      "slug": "crypto-x-ai",
+      "url": "https://www.ritualfoundation.org/docs/overview/crypto-x-ai",
+      "keywords": ["AI", "crypto", "decentralization", "open-source", "LLM", "ChatGPT", "compute", "oligopoly"],
+      "summary": "Mengapa AI perlu berada di blockchain untuk menjaga transparansi, menghindari monopoli, dan memastikan akses terbuka",
+      "chunks": [
+        "It took ChatGPT just under two months to reach 100 million monthly active users.",
+        "The way AI predominantly exists today is not sustainable: Data & compute oligopoly, Closed model monopolies, Alignment autocracy.",
+        "Crypto is the only proven decentralizing force, enabling self-sovereign control of data and capital.",
+        "Ritual is purpose-built to decentralize access to AI compute: Enshrined compute, Censorship resistant, Composable.",
+        "Verifiable AI Provenance: Ritual enables open- and closed-source model verifiability."
+      ]
+    },
+    {
+      "id": "doc_003",
+      "filename": "enshrined-ai-models.txt",
+      "title": "Enshrined On-Chain AI Models",
+      "slug": "enshrined-ai-models",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/ai-primitives/enshrined-ai-models",
+      "keywords": ["enshrined models", "on-chain AI", "smart contracts", "model inference", "verifiable provenance", "DeFi"],
+      "summary": "Ritual menjadikan model AI sebagai first-class citizens di blockchain untuk interaksi atomic dengan smart contracts",
+      "chunks": [
+        "Enshrined On-Chain AI Models enable native smart contract interactions with AI models.",
+        "Ritual takes a fundamentally different approach by making AI models first-class citizens on the blockchain.",
+        "Models exist as on-chain objects with: Verifiable provenance, Modular model authenticity, Direct smart contract integration.",
+        "Use cases: DeFi + AI, Governance, Gaming, Creator Economy."
+      ]
+    },
+    {
+      "id": "doc_004",
+      "filename": "evm-sidecars-overview.txt",
+      "title": "EVM++ Sidecars Overview",
+      "slug": "evm-sidecars-overview",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/evm++-sidecars/overview",
+      "keywords": ["EVM", "sidecars", "precompiles", "AI Inference", "ZK Proving", "TEE", "Chain Abstraction"],
+      "summary": "Ritual mengimplementasikan precompile sebagai sidecars terpisah yang dapat diskalakan secara paralel",
+      "chunks": [
+        "Ritual enables expressive, heterogeneous compute via the EVM precompile contract interface.",
+        "Ritual's compute precompiles are implemented as disjoint sidecars that run and scale parallel to an execution client.",
+        "Supported sidecars: Classical ML Inference, LLM Inference, ZK Proving & Verification, TEE Execution, Chain Abstraction."
+      ]
+    },
+    {
+      "id": "doc_005",
+      "filename": "guardians.txt",
+      "title": "Guardians",
+      "slug": "guardians",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/guardians",
+      "keywords": ["Guardians", "compute firewalls", "node specialization", "semantic filtering", "consensus"],
+      "summary": "Guardians adalah firewall komputasi canggih untuk operasi node yang terspesialisasi",
+      "chunks": [
+        "Guardians are advanced compute firewalls for specialized node operation.",
+        "Traditional blockchain nodes face a fundamental challenge: they must process all transactions uniformly.",
+        "Ritual Guardians enable computational and semantic filtering of blockchain operations.",
+        "Nodes can filter based on hardware requirements: AI model size, ZK circuit complexity, TEE code execution.",
+        "Statistical firewalls enable nodes to hyperspecialize based on prompt categories and topics."
+      ]
+    },
+    {
+      "id": "doc_006",
+      "filename": "infernet-to-chain.txt",
+      "title": "Infernet to Chain",
+      "slug": "infernet-to-chain",
+      "url": "https://www.ritualfoundation.org/docs/architecture/infernet-to-chain",
+      "keywords": ["Infernet", "compute mesh", "decentralized inference", "verifiable compute", "8,000 nodes"],
+      "summary": "Ritual menghubungkan 8,000+ node Infernet dengan blockchain untuk komputasi AI yang transparan",
+      "chunks": [
+        "Ritual, with its underlying mesh of 8,000+ connected Infernet nodes, lets anyone, anywhere tap into transparent AI.",
+        "Centralized APIs are broken: geo-restrict access, require operator trust, and censor.",
+        "Infernet launched in November 2023 as the first decentralized oracle network for purpose-built AI workloads.",
+        "Chain-as-an-interface: Resonance is extended to enable routing compute requests to Infernet nodes."
+      ]
+    },
+    {
+      "id": "doc_007",
+      "filename": "model-marketplace.txt",
+      "title": "Model Marketplace",
+      "slug": "model-marketplace",
+      "url": "https://www.ritualfoundation.org/docs/beyond-crypto-x-ai/model-marketplace",
+      "keywords": ["model marketplace", "IP", "monetization", "royalties", "Story Protocol", "Sentient"],
+      "summary": "Ritual menciptakan marketplace terdesentralisasi untuk model AI dengan verifikasi dan royalti",
+      "chunks": [
+        "As AI models become increasingly valuable assets, there is a growing need for decentralized marketplaces.",
+        "Ritual introduces foundational primitives that enable verifiable model marketplaces.",
+        "Enshrined AI Models become first-class citizens on the blockchain.",
+        "Verifiable Model Execution via vTune and SVE.",
+        "Model Monetization with vault-like architecture and royalty distribution.",
+        "Story Protocol and Sentient can leverage Ritual for IP management."
+      ]
+    },
+    {
+      "id": "doc_008",
+      "filename": "modular-storage.txt",
+      "title": "Modular Storage",
+      "slug": "modular-storage",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/modular-storage",
+      "keywords": ["modular storage", "Arweave", "Hugging Face", "repositories", "storage-agnostic"],
+      "summary": "Pendekatan storage-agnostic dengan dukungan untuk Web2 (Hugging Face) dan Web3 (Arweave)",
+      "chunks": [
+        "Modular Storage is a storage-agnostic approach to data, with support for Web2 and Web3 venues.",
+        "Modern blockchains operate with limited, expensive on-chain storage capabilities.",
+        "Ritual introduces a provider-agnostic approach to storage by abstracting storage access into repositories.",
+        "Native integration with both Web2 (via Hugging Face Hub) and Web3 (via Arweave) storage layers."
+      ]
+    },
+    {
+      "id": "doc_009",
+      "filename": "node-specialization.txt",
+      "title": "Node Specialization",
+      "slug": "node-specialization",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/node-specialization",
+      "keywords": ["node specialization", "Symphony", "Resonance", "replicated execution", "EOVMT"],
+      "summary": "Ritual memperkenalkan spesialisasi node melalui arsitektur Execute-Once-Verify-Many-Times",
+      "chunks": [
+        "Traditional blockchains like Ethereum operate by coming to consensus over ordering and replicated execution.",
+        "Ritual Chain introduces node specialization through architecture purpose-built for reducing redundant re-execution.",
+        "Symphony reduces replicated execution through dual proof sharding, distributed verification, and optimal sampling.",
+        "Resonance enables user preference, matching heterogeneous transactions to heterogeneous nodes."
+      ]
+    },
+    {
+      "id": "doc_010",
+      "filename": "prover-networks.txt",
+      "title": "Prover Networks",
+      "slug": "prover-networks",
+      "url": "https://www.ritualfoundation.org/docs/beyond-crypto-x-ai/prover-networks",
+      "keywords": ["prover networks", "ZK proof", "MegaETH", "proof generation", "decentralized verification"],
+      "summary": "Ritual sebagai jaringan prover untuk outsourcing pembuatan dan verifikasi ZK proof",
+      "chunks": [
+        "Zero-knowledge (ZK) proof systems are becoming central to blockchain scalability and privacy.",
+        "Ritual's architecture provides a natural solution, enabling chains to outsource their proving needs.",
+        "Efficient Proof Generation through Resonance with specialized hardware matching.",
+        "Decentralized Verification via Symphony's EOVMT protocol.",
+        "Case Study: MegaETH can outsource proof generation to specialized nodes."
+      ]
+    },
+    {
+      "id": "doc_011",
+      "filename": "resonance.txt",
+      "title": "Resonance",
+      "slug": "resonance",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/resonance",
+      "keywords": ["Resonance", "fee mechanism", "two-sided market", "brokers", "heterogeneous compute"],
+      "summary": "Mekanisme fee canggih untuk mencocokkan supply dan demand transaksi heterogen",
+      "chunks": [
+        "Resonance is a state-of-the-art transaction fee mechanism to efficiently match supply and demand.",
+        "Blockchain transactions have become increasingly heterogeneous.",
+        "Existing fee mechanisms are insufficient, suffering from poor welfare guarantees.",
+        "Resonance is a two-sided market setting matching users to nodes.",
+        "Brokers are sophisticated, profit-seeking agents that compute matchings between transactions and nodes."
+      ]
+    },
+    {
+      "id": "doc_012",
+      "filename": "scheduled-transactions.txt",
+      "title": "Scheduled Transactions",
+      "slug": "scheduled-transactions",
+      "url": "https://www.ritualfoundation.org/docs/architecture/scheduled-transactions",
+      "keywords": ["scheduled transactions", "Scheduler", "SystemTx", "top-of-block", "PBS++"],
+      "summary": "Transaksi terjadwal untuk eksekusi otomatis fungsi smart contract secara berkala",
+      "chunks": [
+        "We introduce a new predeploy contract, Scheduler.",
+        "Developers can easily set up scheduled smart contract invocations through Scheduler.schedule().",
+        "Scheduled transactions containing heterogeneous compute consume the same standard Scheduler interface.",
+        "Scheduled transactions have privileged inclusion at top-of-block."
+      ]
+    },
+    {
+      "id": "doc_013",
+      "filename": "symphony.txt",
+      "title": "Symphony",
+      "slug": "symphony",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/symphony",
+      "keywords": ["Symphony", "consensus", "EOVMT", "proof sharding", "distributed verification"],
+      "summary": "Protokol konsensus baru untuk mengurangi replicated execution dan mendukung workload intensif",
+      "chunks": [
+        "Symphony is a new consensus protocol to reduce replicated execution and enable high-performance, resource-intensive workloads.",
+        "Most blockchains today operate on replicated execution, where all nodes re-execute each block.",
+        "Symphony builds upon an Execute-Once-Verify-Many-Times (EOVMT) model.",
+        "Model partitioning, Proof sharding, Storing proof shards off-chain, Distributed verification.",
+        "Flexible proof systems: TEE Attestations, Zero-Knowledge Proofs, Hybrid Solutions."
+      ]
+    },
+    {
+      "id": "doc_014",
+      "filename": "verifiable-provenance.txt",
+      "title": "Verifiable Provenance",
+      "slug": "verifiable-provenance",
+      "url": "https://www.ritualfoundation.org/docs/whats-new/ai-primitives/verifiable-provenance",
+      "keywords": ["verifiable provenance", "vTune", "watermarking", "backdooring", "model attribution"],
+      "summary": "Melacak dan membuktikan provenance model AI dengan watermarking dan backdooring",
+      "chunks": [
+        "Verifiable Provenance lets you track and prove the provenance of AI models.",
+        "The status quo of AI models today is dominated by centralized, closed source models.",
+        "Open-source incentivization is broken; creators expend resources but cannot recoup costs.",
+        "Proof of Provenance through watermarking: Weight space, Data watermarking, Function-space watermarking.",
+        "vTune: Verifiable Fine-Tuning for LLMs Through Backdooring, does not affect downstream performance."
+      ]
+    },
+    {
+      "id": "doc_015",
+      "filename": "what-is-ritual.txt",
+      "title": "What is Ritual?",
+      "slug": "what-is-ritual",
+      "url": "https://www.ritualfoundation.org/docs/overview/what-is-ritual",
+      "keywords": ["Ritual", "blockchain", "AI", "heterogeneous compute", "expressive blockchain"],
+      "summary": "Pengantar lengkap tentang Ritual sebagai blockchain paling ekspresif untuk komputasi heterogen",
+      "chunks": [
+        "Ritual is the most expressive blockchain in existence, with a single focus: enrich what users can do on-chain today.",
+        "Behind every magnitude increase in blockchain users lies an innovation that enables net-new behavior.",
+        "Ritual was born from a single focus: enrich what users can do on-chain today to attract the users of tomorrow.",
+        "Ritual makes smart contracts actually smart, allowing users to natively tap into on-chain AI.",
+        "Key innovations: Expressive Compute, Scheduled Transactions, Enshrined AI Models, Model Marketplace, Account Abstraction.",
+        "Resonance, Symphony, Node Specialization, Modular Storage, Guardians, Verifiable Provenance."
+      ]
+    }
+  ]
+}
