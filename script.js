@@ -52,16 +52,16 @@ async function sendQuestion(question) {
         conversation.push({ role: 'system', content: `Source text: ${sourceText}` });
     }
 
-    // call to OpenAI API (replace URL/credentials with your own)
+    // call to Grok API (xAI)
     try {
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        const response = await fetch('https://api.x.ai/v1/chat/completions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer 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'
+                'Authorization': 'Bearer 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'
             },
             body: JSON.stringify({
-                model: 'gpt-4o-mini',
+                model: 'grok-2',
                 messages: conversation
             })
         });
@@ -96,4 +96,5 @@ initConversation();
 preloadSource();
 
 appendMessage('ai', 'Ready, default source is loaded. Ask me anything.');
+
 
