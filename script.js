@@ -38,7 +38,7 @@ async function sendQuestion(question) {
                 'Authorization': 'Bearer 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'
             },
             body: JSON.stringify({
-                model: 'llama-3.1-405b-reasoning',
+                model: 'openai/gpt-oss-120b',
                 messages: conversation
             })
         });
@@ -79,4 +79,5 @@ userInput.addEventListener('keypress', (e) => {
 // start
 initConversation();
 appendMessage('ai', 'Ready. Ask me anything.');
+
 
