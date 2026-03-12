@@ -38,7 +38,7 @@ async function sendQuestion(question) {
                 'Authorization': 'Bearer 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'
             },
             body: JSON.stringify({
-                model: 'mixtral-8x7b-32768',
+                model: 'llama-3.1-405b-reasoning',
                 messages: conversation
             })
         });
@@ -79,3 +79,4 @@ userInput.addEventListener('keypress', (e) => {
 // start
 initConversation();
 appendMessage('ai', 'Ready. Ask me anything.');
+
