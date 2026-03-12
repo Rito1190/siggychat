@@ -39,25 +39,46 @@ header {
     background: transparent;
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+.message-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.ai-container {
+    justify-content: flex-start;
+}
+
+.user-container {
+    justify-content: flex-end;
+}
+
+.message-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .message {
-    margin: 5px 0;
+    margin: 0;
     padding: 8px 12px;
     border-radius: 4px;
     max-width: 70%;
     border: 1px solid rgba(0,0,0,0.1);
     background: rgba(255,255,255,0.8);
+    word-wrap: break-word;
 }
 
 .message.user {
     background: rgba(209,231,221,0.8);
-    align-self: flex-end;
 }
 
 .message.ai {
     background: rgba(248,215,218,0.8);
-    align-self: flex-start;
 }
 
 footer {
