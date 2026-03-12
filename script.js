@@ -391,7 +391,6 @@ async function initRitualDocs() {
 // Contoh: jika fungsi sendMessage Anda bernama `sendMessage`
 async function sendMessageWithRitual() {
     const userMessage = document.getElementById('messageInput').value;
-    await sendMessageWithRitual();
     // Tampilkan pesan user
     displayUserMessage(userMessage);
     
@@ -506,6 +505,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // start
 initConversation();
 appendMessage('ai', 'Ready. Ask me anything.');
+
 
 
 
