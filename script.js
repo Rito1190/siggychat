@@ -52,26 +52,32 @@ async function sendQuestion(question) {
         conversation.push({ role: 'system', content: `Source text: ${sourceText}` });
     }
 
-    // call to Grok API (xAI)
+    // call to Grok API (xAI) through backend proxy
     try {
-        const response = await fetch('https://api.x.ai/v1/chat/completions', {
+        const response = await fetch('/api/chat', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer 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'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                model: 'grok-2',
                 messages: conversation
             })
         });
+        
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error('API Error:', response.status, errorData);
+            appendMessage('ai', `Error: ${response.status} - ${errorData.error?.message || 'Unknown error'}`);
+            return;
+        }
+        
         const data = await response.json();
         const aiText = data.choices[0].message.content;
         appendMessage('ai', aiText);
         conversation.push({ role: 'assistant', content: aiText });
     } catch (err) {
-        appendMessage('ai', 'Error: cannot reach AI server.');
-        console.error(err);
+        console.error('Fetch error:', err);
+        appendMessage('ai', 'Error: ' + err.message);
     }
 }
 
@@ -94,7 +100,4 @@ userInput.addEventListener('keypress', (e) => {
 // start
 initConversation();
 preloadSource();
-
 appendMessage('ai', 'Ready, default source is loaded. Ask me anything.');
-
-
